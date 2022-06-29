@@ -1,0 +1,30 @@
+/* @media only screen and (max-width: 768px){
+    nav{
+        position: relative;
+        top: 0;
+    }
+    nav .logo h2{
+        font-size: 17px;
+        width: 100%;
+    }
+     nav .nav-link{
+        flex-direction: column;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        z-index: 999999;
+    }
+     nav .right_bar{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-right: 10px;
+    }
+    .right_bar i{
+        margin-left: 20px;
+    }
+
+}; */

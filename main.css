@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+.section-p{
+    padding: 12px 80px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #088178);
+    border-radius: .5rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(248, 248, 248);
+    overflow-x: hidden;
+}
+nav{
+    width: 100vw;
+    height: 8vh;
+    background-color: #e3e6f3;
+    box-shadow: 2px 1px 15px 1px #00000027;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 10px 80px;
+    z-index: 9999;
+}
+.sticky{
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#e3e6f3;
+}
+nav .logo {
+    width: 120px;
+}
+nav .logo img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+nav .nav-link{
+    align-items: center;
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
+}
+nav .nav-link li{
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}
+nav .nav-link a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+nav .nav-link a i{
+    font-size: 18px;
+    color: #088178;
+}
+nav .nav-link li a:hover{
+    color: #088178;
+    transition: .3s ease;
+}
+nav .nav-link li a::after{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 70%;
+    opacity: 0;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #088178;
+    transition: all .7s linear ;
+}
+nav .nav-link li a.active{
+    color: #088178;
+    position: relative;
+}
+nav .nav-link a:hover::after{
+    opacity: 10;
+}
+/* ///hero/// */
+.hero{
+    background-image: url(./img/hero4.png);
+    width: 100%;
+    height: 92vh;
+    background-position: center;
+    background-size: cover;
+    padding: 12px 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'League Spartan', sans-serif;
+}
+.hero h6{
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-family: 'League Spartan', sans-serif;
+}
+.hero h2{
+    color: rgb(0, 0, 0);
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 60px;
+}
+.hero h1{
+    color: #088178;
+    font-size: 52px;
+    font-weight: 600;
+    font-family: 'League Spartan', sans-serif;
+}
+.hero p{
+    margin-top: 16px;
+    font-size: 18px;
+    color: gray;
+    font-family: 'League Spartan', sans-serif;
+
+}
+.hero .button{
+    background-image: url(./img/button.png);
+    padding: 10px 80px;
+    border: none;
+    outline: none;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.hero button{
+    background-color: transparent;
+    color: #088178;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* features */
+.features{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.features .fe-card{
+    margin-top: 2rem;
+    width: 160px;
+    height: 180px;
+    border-radius: 8px;
+    border: 1px solid rgb(241, 241, 241);
+    box-shadow: 2px 1px 15px 2px rgba(0, 0, 0, 0.075);
+}
+.features .fe-card a.last{
+    background-color: #71fff6b0;
+}
+.features .fe-card a.four{
+    background-color: rgb(174, 209, 240);
+}
+.features .fe-card a.three{
+    background-color: #ffd3b4;
+}
+.features .fe-card a.two{
+    background-color: #c9ffb4;
+}
+.features .fe-card a.two{
+    background-color: rgb(143, 177, 165);
+}
+.features .fe-card a.one{
+    background-color: #e3e6f3;
+}
+.features .fe-card img{
+    width: 100%;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.features .fe-card a{
+    width: 70%;
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: rgba(253, 193, 255, 0.705);
+    color: #000000;
+    font-size: 13px;
+}
+
+/* --------------------products----------------------- */
+.product{
+    margin-top: 4rem;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.product h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.712);
+    text-transform: capitalize;
+    font-family: 'League Spartan', sans-serif;
+}
+.product p{
+    text-transform: capitalize;
+    color: gray;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 19px;
+}
+.product .product-item{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product .product-item .product-card{
+    margin-top: 2rem;
+    position: relative;
+    padding: 10px 14px;
+    width: 250px;
+    height: 370px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px 1px #d8d8d8c5;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+}
+.product .product-item .product-card:hover{
+    box-shadow: 3px 2px 40px 2px #00000017;
+    transition: .3s ease-in-out;
+}
+.product .product-item .product-card .item{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(16px);
+}
+.product .product-item .product-card .item img{
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.product .product-item .product-card .item img:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.product .product-item .product-card .item .item-text  p{
+    color: gray;
+    text-align: start;
+    font-size: 16px;
+}
+.product .product-item .product-card .item .item-text h6{
+    text-transform: capitalize;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    font-weight: 500;
+    color: #000000;
+}
+.product .product-item .product-card .item .item-text .review i{
+    letter-spacing: 1px;
+    color: #f8c322	;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.product .product-item .product-card .item h5{
+    color: #088178;
+    font-size: 22px;
+    margin-top: 8px;
+    
+}
+.product-item .product-card .item .item-text .cart i{
+    width: 40px;
+    color: #088178;
+    position: absolute;
+    bottom: 2%;
+    border-radius: 50%;
+    right: 5%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
+    background-color: #08817923;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    border: 1px solid rgba(190, 190, 190, 0.315);
+};
+
+/* banner */
+.banner{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.banner .img{
+    width: 100%;
+    height: 300px;
+    background-image: url(./img/banner/b2.jpg);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 2rem;
+}
+.banner .img h6{
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: 'League Spartan', sans-serif;
+    text-transform: capitalize;
+}
+.banner .img h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+
+}
+.banner .img  span{
+    color: rgb(204, 19, 19);
+    text-transform: capitalize;
+}
+.banner .img  button{
+    padding: 9px 20px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    margin-top: 10px;
+    border: none;
+    font-weight: 700px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.banner .img  button:hover{
+    background-color: #088178;
+    color: white;
+    transition: .3s ease;
+}
+.banner2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.banner2 .banner-item{
+    background-image: url(./img/banner/b10.jpg);
+    width: 45%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner2 .banner-item .banner-text{
+    padding: 20px 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.banner2 .banner-item .banner-text h6{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(212, 212, 212);
+}
+.banner2 .banner-item .banner-text h1{
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.banner2 .banner-item .banner-text button{
+    width: 25%;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0px 7px;
+    cursor: pointer;
+}
+.banner2 .banner-item .banner-text button:hover{
+    background-color: #088178;
+    color: white;
+    transition: .3s ease;
+}
+.banner2 .banner-item2{
+    background-image: url(./img/banner/b17.jpg);
+    width: 45%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner2 .banner-item2 .banner-text{
+    padding: 20px 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.banner2 .banner-item2 .banner-text h6{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(134, 134, 134);
+}
+.banner2 .banner-item2 .banner-text h1{
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.banner2 .banner-item2 .banner-text button{
+    width: 25%;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0px 7px;
+    cursor: pointer;
+}
+.banner2 .banner-item2 .banner-text button:hover{
+    background-color: #088178;
+    color: white;
+    transition: .3s ease;
+}
+
+
+.banner3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner3 .banner-item{
+    background-image: url(./img/banner/b4.jpg);
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 1rem;
+}
+.banner3 .banner-item .banner-text{
+    padding: 20px 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.banner3 .banner-item .banner-text h6{
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.banner3 .banner-item .banner-text h1{
+    color: rgb(255, 111, 111);
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.banner3 .banner-item2{
+    background-image: url(./img/banner/b7.jpg);
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 1rem;
+}
+.banner3 .banner-item2 .banner-text{
+    padding: 20px 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.banner3 .banner-item2 .banner-text h6{
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.banner3 .banner-item2 .banner-text h1{
+    color: rgb(175, 72, 72);
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.banner3 .banner-item3{
+    background-image: url(./img/banner/b18.jpg);
+    width: 350px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 1rem;
+}
+.banner3 .banner-item3 .banner-text{
+    padding: 20px 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.banner3 .banner-item3 .banner-text h6{
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.banner3 .banner-item3 .banner-text h1{
+    color: rgb(204, 97, 97);
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+/* news */
+.news{
+    margin-top: 2rem;
+    width: 100%;
+    height: 150px;
+    background-color: #180d31;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    margin-bottom: 2rem;
+}
+.news .news-item h1{
+    color: white;
+    text-transform: capitalize;
+    font-size: 29px;
+    font-weight: 500;
+}
+.news .news-item p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(155, 155, 155);
+}
+.news .news-item span{
+    color: #f8c322;
+}
+.news .news-item .form{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.news .news-item .form input{
+    height: 100%;
+    padding: 0px 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.news .news-item .form button{
+    height: 100%;
+    padding: 0px 20px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    background-color: #088178;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* footer */
+.fotter{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.fotter .fotter-item .logo{
+    margin-bottom: 16px;
+}
+.fotter .fotter-item h5{
+    font-size: 20px;
+    color: rgb(29, 29, 29);
+    margin-bottom: 18px;
+}
+.fotter .fotter-item p{
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.fotter .fotter-item span{
+    color: #8b8b8b;
+}
+.fotter .fotter-item h6{
+    margin-top: 1.4rem;
+    color: #000000;
+    font-size: 20px;
+}
+.fotter .fotter-item i{
+    margin-right: 10px;
+    margin-top: 1rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+.fotter .fotter-item h4{
+    margin-bottom: 1rem;
+    color: gray;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.fotter .fotter-item img{
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    height: 70px;
+    background-color: #088178;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.copyright h2{
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.copyright span{
+    color: #f8c322;
+}
